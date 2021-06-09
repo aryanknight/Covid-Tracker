@@ -1,0 +1,81 @@
+* {
+  box-sizing: border-box;
+  padding: 0%;
+  margin: 0%;
+}
+
+body {
+  background-color: rgb(231, 237, 240);
+  font-family: "Baloo Tamma 2";
+}
+
+.image-container {
+  text-align: center;
+}
+
+.container {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.cards {
+  text-align: center;
+  min-width: 15rem;
+  max-width: 15rem;
+  margin: 1%;
+  padding: 1%;
+  background-color: #f6f6f6;
+  font-family: "Baloo Tamma 2";
+  color: #28527a;
+  box-shadow: 10px 10px 8px 0 rgba(0, 0, 0, 0.3);
+  border-radius: 10%;
+  transition: 0.7s;
+}
+
+.cards:hover {
+  transform: scale3d(1.1, 1.1, 1.1);
+}
+
+.cards h4 {
+  color: black;
+}
+
+.country-picker-container {
+  padding: 3%;
+  text-align: center;
+}
+
+.charts {
+  padding: 3%;
+}
+
+#infected {
+  border-bottom-left-radius: 0;
+  border-bottom-right-radius: 0;
+  border-bottom: 10px solid rgba(0, 0, 255, 0.5);
+}
+
+#recovered {
+  color: rgb(5, 134, 22);
+  border-bottom-left-radius: 0;
+  border-bottom-right-radius: 0;
+  border-bottom: 10px solid rgba(0, 255, 0, 0.5);
+}
+
+#deaths {
+  color: rgba(255, 0, 0, 0.5);
+  border-bottom-left-radius: 0;
+  border-bottom-right-radius: 0;
+  border-bottom: 10px solid rgba(255, 0, 0, 0.5);
+}
+
+@media (max-width: 600px) {
+  .cards {
+    margin: 2%;
+    min-width: 90%;
+  }
+  .cards:hover {
+    transform: scale3d(1, 1, 1);
+  }
+}
